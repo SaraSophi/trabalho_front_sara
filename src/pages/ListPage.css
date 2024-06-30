@@ -17,14 +17,14 @@
 .recipe-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .recipe-item {
     border: 1px solid #ccc;
     padding: 20px;
-    margin: 10px;
-    width: calc(33.333% - 40px);
+    width: calc(25% - 40px); 
     box-sizing: border-box;
     text-align: left;
     background: white;
@@ -32,14 +32,19 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 1024px) {
+    .recipe-item {
+        width: calc(33.333% - 40px); 
+    }
+}
+
 @media (max-width: 768px) {
     .recipe-item {
-        width: calc(50% - 40px);
+        width: calc(50% - 40px); 
     }
 }
 
 @media (max-width: 480px) {
     .recipe-item {
-        width: calc(100% - 40px);
-    }
+        width: calc(100% - 40px);     }
 }

@@ -1,20 +1,19 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './RecipeItem.css';
 
 const RecipeItem = ({ recipe }) => {
-    const navigate = useNavigate();
-
-    const handleDetailsClick = () => {
-        navigate(`/recipe/${recipe.id}`);
-    };
-
     return (
         <div className="recipe-item">
-            <h3>{recipe.name}</h3>
-            <p><strong>Tempo de Preparo:</strong> {recipe.prepTimeMinutes} minutos</p>
-            <p><strong>Cozinha:</strong> {recipe.cuisine}</p>
-            <button onClick={handleDetailsClick} className="details-button">Detalhes</button>
+            <div className="recipe-image-container">
+                <img src={recipe.strMealThumb} alt={recipe.strMeal} className="recipe-image" />
+            </div>
+            <div className="recipe-info">
+                <h3>{recipe.strMeal}</h3>
+                <p><strong>Categoria:</strong> {recipe.strCategory}</p>
+                <p><strong>Área:</strong> {recipe.strArea}</p>
+                <Link to={`/recipe/${recipe.idMeal}`} className="details-button">Detalhes</Link>
+            </div>
         </div>
     );
 };

@@ -1,7 +1,9 @@
+@import '~@fontsource/poppins';
+
 body {
   margin: 0;
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(to right, #ff5f6d, #ffc371);
+  font-family: 'Poppins', sans-serif; 
+  background: linear-gradient(to right, #f6d365, #fda085);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -13,13 +15,14 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .login-box {
   background: white;
   padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-align: center;
   width: 300px;
 }
@@ -27,20 +30,23 @@ body {
 .login-box h2 {
   margin-bottom: 20px;
   color: #333;
+  font-size: 24px;
+  font-weight: 700; 
 }
 
 .login-box input {
   margin: 10px 0;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
   font-size: 16px;
+  outline: none;
 }
 
 .login-box button {
-  padding: 10px 20px;
+  padding: 12px 20px;
   width: 100%;
   background-color: #ff5f6d;
   border: none;
@@ -48,10 +54,12 @@ body {
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
-}
+  font-family: 'Poppins', sans-serif; 
+  transition: background-color 0.3s ease, color 0.3s ease; }
 
 .login-box button:hover {
-  background-color: #ff3b49;
+  background-color: #ff3b49; 
+  color: white;
 }
 
 .error {
