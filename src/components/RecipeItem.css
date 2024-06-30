@@ -1,0 +1,38 @@
+.recipe-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    text-align: left;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-item h3 {
+    margin-top: 0;
+}
+
+.ingredient-list {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.ingredient-list li {
+    margin-bottom: 5px;
+}
+
+.details-button {
+    background-color: #ff5f6d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.details-button:hover {
+    background-color: #ff3b4f;
+}
